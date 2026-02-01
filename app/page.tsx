@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import CheckoutModal from "@/components/checkout-modal";
 import React, { useState } from "react";
@@ -9,14 +9,17 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#050505]">
       <div className="flex flex-col items-center justify-center min-h-screen p-8 text-center">
+        <h1 className="text-4xl w-5xl md:text-6xl font-black mb-6 tracking-tight">
+          {/* Build <span className="text-indigo-500">Web3 Checkout</span> into
+            any app. */}
+          Self-hosted payments with{" "}
+          <span className="text-indigo-500">privacy</span> for businesses
+        </h1>
         <div className="max-w-xl">
-          <h1 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">
-            Build <span className="text-indigo-500">Web3 Checkout</span> into
-            any app.
-          </h1>
           <p className="text-xl text-gray-400 mb-12">
-            Accept Solana (SOL) and any SPL token natively. PayGird is the
-            self-hosted infrastructure for the next generation of commerce.
+            PayGrid is a self-hosted, open source embeddable Web3 payments
+            infrastructure built on Solana, designed with privacy at its core
+            for the next generation of commerce.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button
@@ -33,7 +36,6 @@ const App: React.FC = () => {
             >
               View Docs
             </a>
-           
           </div>
 
           <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
